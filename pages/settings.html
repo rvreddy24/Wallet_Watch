@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Budget Planner</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="./dashboard.html" class="logo">Budget Planner</a>
+            <div class="nav-links">
+                <a href="./dashboard.html">Dashboard</a>
+                <a href="./transactions.html">Transactions</a>
+                <a href="./analysis.html">Analysis</a>
+                <a href="./settings.html" class="active">Settings</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="settings-layout">
+            <!-- Categories Section -->
+            <div class="settings-card">
+                <div class="card-header">
+                    <h2>Categories</h2>
+                    <p>Manage your transaction categories</p>
+                </div>
+                <div class="categories-list" id="categories-list">
+                    <!-- Categories will be inserted here by JavaScript -->
+                </div>
+                <form id="add-category-form" class="add-category-form">
+                    <input type="text" id="new-category" placeholder="New category name">
+                    <button type="submit">Add Category</button>
+                </form>
+            </div>
+
+            <!-- Data Management Section -->
+            <div class="settings-card">
+                <div class="card-header">
+                    <h2>Data Management</h2>
+                    <p>Export or clear your budget data</p>
+                </div>
+                <div class="data-actions">
+                    <button id="export-data" class="btn-secondary">
+                        <span class="button-icon">📊</span>
+                        Export as CSV
+                    </button>
+                    <button id="clear-data" class="btn-danger">
+                        <span class="button-icon">🗑</span>
+                        Clear All Data
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Raj Varshith Reddy Malgireddy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/settings.js"></script>
+</body>
+</html> 
